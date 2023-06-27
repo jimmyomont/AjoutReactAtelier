@@ -1,0 +1,44 @@
+@use 'sass:color';
+@use '../var';
+
+.intro {
+  min-height: calc(100vh - 2rem);
+  margin-top: 1rem;
+  background-color: var.$color-variation2;
+  background-image: url('https://cdn.discordapp.com/attachments/1101739977081094197/1123350631789367367/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 5px;
+
+  &__content {
+    font-size: 1.5vw;
+    text-align: right;
+    padding: 2rem;
+    background-color: var.$color-variation1;
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin: 2rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  &__desc {
+    margin-bottom: 2rem;
+  }
+
+  &__emphasis {
+    color: white;
+    background-color: var.$color;
+
+    &:hover {
+      background-color: color.scale(var.$color, $lightness: -20%);
+    }
+  }
+}

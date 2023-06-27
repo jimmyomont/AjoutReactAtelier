@@ -1,0 +1,15 @@
+@use '../var';
+
+.segment {
+    background-color: #D5E1E0;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: var.$radius;
+    box-shadow: var.$shadow;
+
+    &__title {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+}

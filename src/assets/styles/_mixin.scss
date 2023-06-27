@@ -1,0 +1,27 @@
+@use './var';
+
+@mixin hover-effect {
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@mixin disc($size) {
+    &::before, &::after {
+      content: "";
+      display: inline-block;
+      width: $size;
+      height: $size;
+      background-color: var.$color;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    &::before {
+      margin-right: .5rem;
+    }
+    &::after {
+      margin-left: .5rem;
+    }
+}

@@ -1,0 +1,9 @@
+@use 'sass:color';
+
+$color: #518a6b;
+
+$color-variation1: color.scale($color, $lightness: 75%);
+$color-variation2: color.scale($color, $lightness: 95%);
+
+$radius: 5px;
+$shadow: 10px 10px 20px -10px rgba(0, 0, 0, .2);

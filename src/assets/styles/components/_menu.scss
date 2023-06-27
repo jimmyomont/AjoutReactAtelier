@@ -1,0 +1,50 @@
+@use '../var';
+@use '../mixin';
+
+.menu {
+  width: 15rem;
+  background-color: var.$color-variation1;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, .2);
+  text-align: center;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  bottom: 1rem;
+  border-radius: 5px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    padding: 2rem 0;
+    color: var.$color;
+    @include mixin.hover-effect;
+    @include mixin.disc(15px);
+  }
+
+  &__list {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__item {
+    display: block;
+    padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var.$color;
+    @include mixin.hover-effect;
+    @include mixin.disc(5px);
+
+    &--current {
+      border-left: 4px solid;
+    }
+  }
+  
+}

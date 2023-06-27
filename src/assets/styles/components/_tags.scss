@@ -1,0 +1,18 @@
+@use '../var';
+
+.tags {
+    margin-bottom: 2rem;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        margin: 0.3rem;
+        background-color: var.$color;
+        color: white;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+    }
+}

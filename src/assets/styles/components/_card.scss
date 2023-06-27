@@ -1,0 +1,32 @@
+@use '../var';
+
+.card {
+    width: 30%;
+    margin: 2rem 0;
+    background-color: #E6ECEC;
+    border-radius:var.$radius;
+    overflow: hidden;
+    box-shadow: var.$shadow;
+
+    &__img {
+        max-width: 100%;
+        display: block;
+    }
+
+    &__desc {
+        padding: 1rem;
+    }
+
+    &__title {
+        font-size: 1.25em;
+        text-align: center;
+        margin-top: 1rem;
+        color: var.$color;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "test-pilori",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "clear": "rm -rf .parcel-cache dist",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "feather-icon": "^0.1.0",
+    "feather-icons": "^4.29.0",
+    "feather-icons-react": "^0.6.2",
+    "parcel": "^2.9.1",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.62.1",
+    "switch": "^0.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.1",
+    "process": "^0.11.10"
+  }
+}
